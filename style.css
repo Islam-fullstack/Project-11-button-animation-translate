@@ -10,3 +10,84 @@ body{
     background-color: #555;
 }
 
+.flex-box{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box .btn{
+    padding: 20px 40px;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    overflow: hidden;
+    position: relative;
+    /* transition: 1s; */
+}
+
+.flex-box .btn span{
+    display: inline-block;
+    transition: 1s;
+}
+
+.flex-box .btn .first{
+    
+}
+
+.flex-box .btn .first{
+    transform: translateX(15px);
+}
+.flex-box .btn .second{
+    transform: translateX(200px);
+}
+
+.flex-box .btn:hover{
+    box-shadow: 0 0 10px white;
+}
+
+.flex-box .btn:hover .second{
+    transform: translateX(-20px);
+}
+
+.flex-box .btn:hover .first{
+    transform: translateX(-200px);
+}
+
+.blur{
+    width: 15px;
+    height: 150px;
+    /* display: block; */
+    position: absolute;
+    left: -50px;
+    top: -60px;
+    transition: 1s;
+    background-color: white;
+    transform: rotate(40deg);
+}
+
+.blur-line{
+    position: absolute;
+    width: 35px;
+    height: 150px;
+    left: -50px;
+    top: -60px;
+    background-color: white;
+    transform: rotate(40deg);
+    transition: 2s;
+    
+}
+
+
+
+.btn:hover .blur,.btn:hover .blur-line{
+    left: 200px;
+}
