@@ -37,6 +37,9 @@ body{
 .flex-box .btn span{
     display: inline-block;
     transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
 }
 
 .flex-box .btn .first{
@@ -45,9 +48,15 @@ body{
 
 .flex-box .btn .first{
     transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+    -o-transform: translateX(15px);
+    -moz-transform: translateX(15px);
 }
 .flex-box .btn .second{
     transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    -o-transform: translateX(200px);
+    -moz-transform: translateX(200px);
 }
 
 .flex-box .btn:hover{
@@ -56,10 +65,16 @@ body{
 
 .flex-box .btn:hover .second{
     transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
 }
 
 .flex-box .btn:hover .first{
     transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
 }
 
 .blur{
@@ -72,6 +87,9 @@ body{
     transition: 1s;
     background-color: white;
     transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
 }
 
 .blur-line{
@@ -82,7 +100,13 @@ body{
     top: -60px;
     background-color: white;
     transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
     transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -o-transition: 2s;
     
 }
 
